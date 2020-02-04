@@ -8,26 +8,15 @@
   width: 100%;
   -webkit-clip-path: ellipse(80% 40% at 50% 30%);
           clip-path: ellipse(80% 40% at 50% 30%);
-  z-index: 2;
-}
-
-#image-border {
-  height: 20rem;
-  width: 100%;
-  background-color: seashell;
   z-index: 1;
-  -webkit-clip-path: ellipse(80% 40% at 50% 30%);
-          clip-path: ellipse(80% 40% at 50% 30%);
-  position: absolute;
-  top: 10rem;
 }
 
 #title-h1 {
-  font-family: 'Sigmar One', cursive;
-  font-size: 3rem;
+  font-family: 'Aclonica', sans-serif;
+  font-size: 3.5rem;
   color: #3d0707;
   text-align: center;
-  z-index: 3;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,9 +31,36 @@
       justify-content: space-around;
   position: absolute;
   left: 2.5rem;
-  text-shadow: 1px 1px 1px;
+  top: -.5rem;
 }
 
+/*
+ 
+ .poligon {
+    display: inline-block;
+    position:relative;
+    width:150px;
+    height:150px;
+    background: black;
+    box-sizing:border-box;
+    padding:55px;
+  }  
+
+#img-border {
+    display: inline-block;
+    border:5px solid red;
+    width:150px;
+    height:150px; 
+    clip-path: ellipse(80% 40% at 50% 30%);
+    display: inline-block;
+    position:relative;
+    bottom: 10rem;
+    width:100%;
+    height:150px;
+    background: black;
+    box-sizing:border-box;
+    z-index: to-lower-case($string: "");
+  } */
 html {
   margin: 0;
   padding: 0;

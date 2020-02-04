@@ -18,6 +18,7 @@ $desktop: 1100px;
 @mixin tablet {
   @media (min-width: #{$laptop}) {
     @content;
+
   }
 }
 
