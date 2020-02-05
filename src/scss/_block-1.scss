@@ -8,13 +8,14 @@
 
 #h-image {
     width: 100%;
-    clip-path: ellipse(80% 40% at 50% 30%);
+    clip-path: ellipse(85% 40% at 50% 30%);
     z-index: 1;
+    filter: opacity(75%);
 }
 
 #title-h1 {
     font-family: 'Aclonica', sans-serif;
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: color(secondary);
     text-align: center;
     z-index: 2;
@@ -23,8 +24,9 @@
     align-items: center;
     justify-content: space-around;
     position: absolute;
-    left: 2.5rem;
-    top: -.5rem;
+    left: 18rem;
+    top: -1.2rem;
+
     }       
 /*
  
