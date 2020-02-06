@@ -10,8 +10,19 @@
     width: 100%;
     clip-path: ellipse(85% 40% at 50% 30%);
     z-index: 1;
-    filter: opacity(75%);
+    filter: opacity(65%);
 }
+
+#header-text {
+@include tablet {
+width: 80%;
+font-size: 200%;
+left: 20rem;
+}
+
+
+}
+
 
 #title-h1 {
     font-family: 'Aclonica', sans-serif;
@@ -19,15 +30,34 @@
     color: color(secondary);
     text-align: center;
     z-index: 2;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
     position: absolute;
     left: 18rem;
-    top: -1.2rem;
+    top: -.5rem;
+    }
+    
+    #title-h2 {
+        font-family: 'Aclonica', sans-serif;
+        font-size: 2rem;
+        color: color(secondary-variant);
+        text-align: center;
+        z-index: 2;
+        position: absolute;
+        left: 12.5rem;
+        top: 1rem;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+     
+    
+    }
 
-    }       
+
+
+
+
+
+
+
+
 /*
  
  .poligon {
