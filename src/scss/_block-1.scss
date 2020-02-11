@@ -3,6 +3,7 @@
 .block-1 {
     text-align: center;
     height: 20rem; 
+    position: relative;
 }
 
 #h-image {
@@ -22,17 +23,10 @@
     position: absolute;
     margin-left: 7rem;
     margin-top: 1.7rem;
-    text-shadow: white 2px 2px;
-    @include desktop {
-        font-size: 16rem;
-        margin-top: 7%;
-        margin-left: 10%;
+    @include tablet {
+        top: 150%;
+        font-size: 6rem;
         }
-     @include tablet {
-         font-size: 8rem;
-         margin-top: 6.5%;
-         margin-left: 15%;
-          }
     }
     
     #title-h2 {
@@ -42,66 +36,14 @@
         text-align: center;
         z-index: 2;
         position: absolute;
-        margin-left: 5rem;
+        margin-left: 4.5rem;
         margin-top: 1rem;
         writing-mode: vertical-rl;
         transform: rotate(180deg);
-        @include desktop {
-            font-size: 6rem;
-            margin-top: 5%;
-            margin-left: 6.5%;
-          }
-          @include tablet {
-            font-size: 3rem;
-            margin-top: 4%;
-            margin-left: 8.5%;
-          }
-
-
-
-
-      /*   @include desktop {
-            font-size: 6rem;
-            margin-top: 5%;
-            margin-left: 6.5%;
-            }
-
         @include tablet {
-            font-size: 3rem;
-            margin-top: 4%;
-            margin-left: 8.5%;
-            }  */
-
-    }
-
-   /*  #title {
-        animation: slideMe 1s ease-in;
-        @include desktop {
-           
+            margin-top: 80%;
+            font-size: 2.5rem;
             }
     }
 
-@keyframes slideMe{
-    0%{
-        transform: skewX(53deg) translateX(-500px);
-        opacity: 0;
-    }
-    60%{
-        transform: translateX(0px);
-    }
-    62%{
-        transform: skewX(0deg) translateX(30px);
-    }
-    70%{
-        transform: skew(-20deg);
-        opacity: 1;
-    }
-    80%{
-        transform: skew(0deg) translate(0);
-    }
-    90%{
-        transform: skew(-5deg);
-    }
-    100%{
-        transform: skew(0deg);
-    } */
+

@@ -1,16 +1,16 @@
 
 $colors: (
-  primary: #750b0b,
+  primary: #e92121,
   primary-variant: #ffc8c8,
-  secondary: rgb(73, 32, 8),
+  secondary: rgb(51, 22, 5),
   secondary-variant: #ffffff,
   background: #a5a5a5,
 );
 
 
-$phone:600px;
+
 $tablet: 600px;
-$laptop: 1100px;
+$laptop: 900px;
 $desktop: 1100px;
 
 
@@ -18,19 +18,16 @@ $desktop: 1100px;
   @return map-get($colors, $color-name);
 } 
 
-@mixin tablet {
+ @mixin tablet {
   @media (min-width: #{$tablet}) {
     @content;
+    
   }
-}
-@mixin laptop {
-  @media (min-width: #{$laptop}) {
-    @content;
-  }
-}
-@mixin desktop {
+} 
+
+ @mixin desktop {
   @media (min-width: #{$desktop}) {
     @content;
   }
 }
-
+ 

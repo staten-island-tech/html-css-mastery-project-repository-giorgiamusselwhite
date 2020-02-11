@@ -1,6 +1,5 @@
 @import "./_variables.scss";
 @import "./_block-1.scss";
-@import "./_block-2.scss";
 
 html {
 margin: 0;
@@ -14,6 +13,6 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(90deg, rgba(255,248,176,0.7) 4%, rgba(240,196,125,0.7) 87%);
-    flex-direction: column;
+
     }
     
