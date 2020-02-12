@@ -31,10 +31,19 @@
     @include desktop {
         font-size: 16rem;
          margin-top: 7%;
-        margin-left: 12%;
+        margin-left: 10.5%;
+        animation: fadein 4s;
         }
        }
     
+
+       @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+      
+
+
     #title-h2 {
         font-family: 'Aclonica', sans-serif;
         font-size: 1.5rem;
@@ -56,6 +65,7 @@
             font-size: 6rem;
             margin-top: 5%;
             margin-left: 6.5%;
+            animation: fadein 4s;
           }
         }
 

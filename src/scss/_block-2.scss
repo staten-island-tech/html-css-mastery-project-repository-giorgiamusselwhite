@@ -1,21 +1,22 @@
 .block-2 {
-    text-align: center;
-    height: 30rem; 
+
+    height: 25rem; 
     flex-direction: column;
     display: flex;
-    background-color: rgba(255, 192, 203, 0.425);
+    justify-content: center;
+    background-color: rgba(255, 153, 153, 0.425);
 align-content: center;
 align-items: center;
 display: flex;
 position: relative;
-top: 2rem;
+
 @include tablet {
   top: 22rem;
-  height: 25%;
+  height: 45rem;
     }
-    @include laptop {
-        top: 80rem;
-        height: 160%;
+    @include desktop {
+        top: 115rem;
+        height: 100rem;
           }
 }
 
@@ -24,54 +25,128 @@ top: 2rem;
 font-size: 3rem;
 color: color(secondary);
 text-align: center;
+text-shadow: white 1.5px 1.5px;
 @include tablet {
     font-size: 5rem;
       }
-      @include laptop {
+      @include desktop {
           font-size: 8rem;
             }
 }
+
+
 
 #foods {
     display: flex;
     flex-direction: row;
     align-items: center;
+    align-content: center;
     justify-content: space-around;
 
     width: 100%;
-    height: 20rem;
+
     padding: 1rem;
-    @include tablet {
-        height: 130%;
-          }
-          @include laptop {
-              height: 160%;
-                }
 } 
 
-#f-image {
-height: 16rem;
+.f-image {
+height: 12rem;
 flex-direction: row;
+border-style: double;
+border-width: .5rem;
+border-color: color(secondary);
+transition: all .3s;
 @include tablet {
     height: 24rem;
+    border-width: 1rem;
       }
-      @include laptop {
-          height: 36rem;
-            }
+      @include desktop {
+        opacity: .7;
+          height: 45rem;
+          border-width: 2rem;
+         
+          }
 
 }
 
-/* .food-overlay {
-transition: .5 ease;
-background-color: color(secondary-variant);
+.f-image:hover {
+  transform: scale(1.3);
+ opacity: 1;
 }
-#f-image:hover .overlay {
-    opacity: 1;
-  }
-  .overlay {
-font-family: 'Adamina', serif;
-font-size: 1.5rem;
-color: black;
- 
-  }
-  */
+
+/* .food-p {
+  font-family: 'Aclonica', sans-serif;
+  color: white;
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.food-1 {
+display: flex;
+align-content: center;
+justify-content: center;
+position: relative;
+
+} */
+
+
+
+
+/* .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: color(background);
+}
+
+.food1:hover .overlay {
+  opacity: 1;
+}
+
+.food2:hover .overlay {
+  opacity: 1;
+}
+
+.food3:hover .overlay {
+  opacity: 1;
+}
+
+
+ */
+
+/* .food2-p {
+  font-family: 'Aclonica', sans-serif;
+  color: white;
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.food3-p {
+  font-family: 'Aclonica', sans-serif;
+  color: white;
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+} */
