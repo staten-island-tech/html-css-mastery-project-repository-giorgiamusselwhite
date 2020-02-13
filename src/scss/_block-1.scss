@@ -20,13 +20,13 @@
     text-align: center;
     z-index: 2;
     position: absolute;
-    margin-left: 7rem;
+    margin-left: 5.5rem;
     margin-top: 1.7rem;
     text-shadow: white 2px 2px;
     @include tablet {
         font-size: 8rem;
         margin-top: 6.5%;
-        margin-left: 15%;
+        margin-left: 13.25%;
          }
     @include desktop {
         font-size: 16rem;
@@ -52,7 +52,7 @@
         z-index: 2;
         position: absolute;
         text-transform: uppercase;
-        margin-left: 5rem;
+        margin-left: 3.25rem;
         margin-top: 1rem;
         writing-mode: vertical-rl;
         transform: rotate(180deg);

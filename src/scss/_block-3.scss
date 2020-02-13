@@ -1,0 +1,76 @@
+.block-3 {
+
+    top: 2.5rem; 
+     height: 25rem; 
+     flex-direction: column;
+     display: flex;
+     justify-content: center;
+     background-color: rgba(179, 243, 137, 0.425);
+ align-content: center;
+ align-items: center;
+ display: flex;
+ position: relative;
+ 
+ @include tablet {
+   top: 35rem;
+   height: 45rem;
+     }
+     @include desktop {
+         top: 95rem;
+         height: 100rem;
+           }
+ }
+ 
+ #sight-title {
+     font-family: 'Adamina', serif;
+ font-size: 3rem;
+ color: color(secondary);
+ text-align: center;
+ text-shadow: white 1.5px 1.5px;
+ @include tablet {
+     font-size: 5rem;
+       }
+       @include desktop {
+           font-size: 8rem;
+             }
+ }
+ 
+ 
+ 
+ #sights {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     align-content: center;
+     justify-content: space-around;
+ 
+     width: 100%;
+ 
+     padding: 1rem;
+ } 
+ 
+ .s-image {
+ height: 12rem;
+ flex-direction: row;
+ border-style: double;
+ border-width: .5rem;
+ border-color: color(secondary);
+ transition: all .3s;
+ @include tablet {
+     height: 24rem;
+     border-width: 1rem;
+       }
+       @include desktop {
+         opacity: .7;
+           height: 25rem;
+           border-width: 2rem;
+          
+           }
+ 
+ }
+ 
+ .f-image:hover {
+   transform: scale(1.3);
+  opacity: 1;
+ }
+ 
