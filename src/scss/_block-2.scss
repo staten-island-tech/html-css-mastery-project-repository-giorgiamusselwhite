@@ -17,12 +17,13 @@ position: relative;
     }
     @include desktop {
         top: 85rem;
-        height: 100rem;
+        height: 90rem;
           }
 }
 
 #food-title {
     font-family: 'Adamina', serif;
+ 
 font-size: 3rem;
 color: color(secondary);
 text-align: center;
