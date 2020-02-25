@@ -31,3 +31,15 @@ $desktop: 1100px;
     @content;
   }
 }
+
+@mixin sight-img {
+  justify-content: center;
+  display: flex;
+
+  @include tablet {
+ 
+     }
+@include desktop {
+  
+    }
+}

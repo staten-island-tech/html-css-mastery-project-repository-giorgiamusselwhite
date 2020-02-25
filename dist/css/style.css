@@ -371,7 +371,7 @@ position: relative;
   }
 }
 
-#sights {
+#s-column1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -384,26 +384,98 @@ position: relative;
   position: relative;
 }
 
+.s-overlay {
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #bfe9f7;
+}
+
 @media (min-width: 600px) {
-  #sights {
-    left: 5rem;
+  .s-overlay {
+    height: 24rem;
+    border-width: 1rem;
   }
 }
 
 @media (min-width: 1100px) {
-  #sights {
-    left: 7.5%;
+  .s-overlay {
+    height: 30rem;
+    border-width: 1rem;
+    width: 100%;
   }
 }
 
+.s-image:hover .s-overlay {
+  opacity: 1;
+}
+
+.s-text {
+  color: black;
+  font-size: 20rem;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+}
+
+#s-column2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+}
+
+#s-column3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+}
+
 .s-image {
+  z-index: 1;
   height: 12rem;
   margin: 3rem;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border-style: double;
+  border-style: solid;
   border-width: .5rem;
   border-color: #492008;
   -webkit-transition: all .3s;
@@ -419,15 +491,9 @@ position: relative;
 
 @media (min-width: 1100px) {
   .s-image {
-    height: 25rem;
-    border-width: 2rem;
+    height: 30rem;
+    border-width: 1rem;
   }
-}
-
-.f-image:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
-  opacity: 1;
 }
 
 html {
