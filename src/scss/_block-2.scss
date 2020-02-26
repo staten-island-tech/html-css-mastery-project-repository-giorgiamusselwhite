@@ -16,7 +16,8 @@ position: relative;
   height: 45rem;
     }
     @include desktop {
-        top: 85rem;
+         top: 85rem; 
+        /* top: 110rem; */
         height: 90rem;
           }
 }
