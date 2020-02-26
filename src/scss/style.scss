@@ -9,6 +9,12 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 font-size: 62.5%;
+
+width: 100%;
+height: 100%;
+margin: 0px;
+padding: 0px;
+
 }
 
 
@@ -17,5 +23,60 @@ body {
     padding: 0;
     background: linear-gradient(90deg, rgba(255,248,176,0.7) 4%, rgba(240,196,125,0.7) 87%);
     flex-direction: column;
+    
+
+overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+
     }
     
+  
+
+    .sight1 {
+        display: flex;
+        justify-content: center;
+            }
+
+            .sight2 {
+                display: flex;
+                justify-content: center;
+                    }
+
+                    .sight3 {
+                        display: flex;
+                        justify-content: center;
+                            }
+
+                            .sight4 {
+                                display: flex;
+                                justify-content: center;
+                                    }
+                                
+                                    .sight5 {
+                                        display: flex;
+                                        justify-content: center;
+                                            }
+                                
+                                            .sight6 {
+                                                display: flex;
+                                                justify-content: center;
+                                                    }
+                                
+                                                    .sight7 {
+                                                        display: flex;
+                                                        justify-content: center;
+                                                            }
+
+                                                            .sight8 {
+                                                                display: flex;
+                                                                justify-content: center;
+                                                                    }
+                                                                
+                                                                    .sight9 {
+                                                                        display: flex;
+                                                                        justify-content: center;
+                                                                            }
+                                                                   
