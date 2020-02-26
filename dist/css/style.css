@@ -318,8 +318,8 @@ position: relative;
   text-align: center;
 } */
 .block-3 {
-  top: 2.5rem;
-  height: 25rem;
+  top: 7rem;
+  height: 175rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -355,39 +355,46 @@ position: relative;
 }
 
 .sights-all {
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 1rem;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  top: -80rem;
+  position: relative;
 }
 
 @media (min-width: 600px) {
   .sights-all {
     top: -35rem;
     position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
 @media (min-width: 1100px) {
   .sights-all {
-    top: -60rem;
+    top: -65rem;
     position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
 #sight-title {
   font-family: 'Adamina', serif;
   font-size: 3rem;
+  top: -81rem;
+  position: relative;
   color: #492008;
   text-align: center;
   text-shadow: white 1.5px 1.5px;
@@ -418,48 +425,96 @@ position: relative;
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  padding: 1rem;
   position: relative;
 }
 
-.s-overlay {
-  z-index: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #bfe9f7;
-}
-
 @media (min-width: 600px) {
-  .s-overlay {
-    height: 24rem;
-    border-width: 1rem;
+  #s-column1 {
+    padding: 1rem;
   }
 }
 
 @media (min-width: 1100px) {
-  .s-overlay {
-    height: 30rem;
-    border-width: 1rem;
-    width: 100%;
+  #s-column1 {
+    padding: 1rem;
   }
 }
 
+#s-column2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+@media (min-width: 600px) {
+  #s-column2 {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  #s-column2 {
+    padding: 1rem;
+  }
+}
+
+#s-column3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+@media (min-width: 600px) {
+  #s-column3 {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  #s-column3 {
+    padding: 1rem;
+  }
+}
+
+/* 
+.s-overlay {
+z-index: 2;
+display: flex;
+justify-content: center;
+align-content: center;
+position: absolute;
+height: 100%;
+width: 100%;
+opacity: 0;
+transition: .5s ease;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: rgb(191, 233, 247);
+@include tablet {
+  height: 24rem;
+  border-width: 1rem;
+    }
+    @include desktop {
+        height: 30rem;
+        border-width: 1rem;
+       width: 100%;
+        }
+}
+ */
 .s-text {
   color: black;
   font-size: 20rem;
@@ -476,36 +531,10 @@ position: relative;
   opacity: 0;
 }
 
-#s-column2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  padding: 1rem;
-  position: relative;
-}
-
-#s-column3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  padding: 1rem;
-  position: relative;
-}
-
 .s-image {
   z-index: 1;
-  height: 12rem;
-  margin: 3rem;
+  height: 15rem;
+  margin: .75rem;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;

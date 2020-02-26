@@ -1,8 +1,8 @@
   
 .block-3 {
 
-  top: 2.5rem; 
-   height: 25rem; 
+  top: 7rem; 
+   height: 175rem; 
    flex-direction: column;
    display: flex;
    justify-content: center;
@@ -23,19 +23,21 @@ position: relative;
 }
 
 .sights-all {
-flex-direction: row;
-display: flex;
+flex-direction: column; 
+display: flex; 
 width: 100%;
 height: 1rem;
-align-content: space-between;
-justify-content: space-evenly;
+top: -80rem; 
+ position: relative;
 @include tablet {
    top: -35rem;
    position: relative;
+   flex-direction: row;
      }
      @include desktop {
-         top: -60rem;
+         top: -65rem;
          position: relative;
+         flex-direction: row;
            }
 
 }
@@ -43,6 +45,8 @@ justify-content: space-evenly;
 #sight-title {
    font-family: 'Adamina', serif;
 font-size: 3rem;
+top: -81rem;
+position: relative;
 color: color(secondary);
 text-align: center;
 text-shadow: white 1.5px 1.5px;
@@ -64,18 +68,45 @@ text-shadow: white 1.5px 1.5px;
    display: flex;
    flex-direction: column;
    width: 100%;
-   padding: 1rem;
+
    position: relative;
    @include tablet {
-
+      padding: 1rem;
       }
       @include desktop {
-     
+         padding: 1rem;
             }
 } 
 
+#s-column2 {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+
+   position: relative;
+   @include tablet {
+      padding: 1rem;
+      }
+      @include desktop {
+         padding: 1rem;
+            }
+   } 
+   
+   #s-column3 {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   position: relative;
+   @include tablet {
+      padding: 1rem;
+      }
+      @include desktop {
+         padding: 1rem;
+            }
+   }
 
 
+/* 
 .s-overlay {
 z-index: 2;
 display: flex;
@@ -101,7 +132,7 @@ background-color: rgb(191, 233, 247);
        width: 100%;
         }
 }
-
+ */
 
 .s-text {
 color: black;
@@ -115,60 +146,29 @@ text-align: center;
 opacity: 0;
 }
 
-#s-column2 {
-display: flex;
-flex-direction: column;
-width: 100%;
-padding: 1rem;
-position: relative;
-@include tablet {
-
-   }
-   @include desktop {
-  
-         }
-} 
-
-#s-column3 {
-display: flex;
-flex-direction: column;
-width: 100%;
-padding: 1rem;
-position: relative;
-@include tablet {
  
-   }
-   @include desktop {
- 
-         }
-} 
-
-
-
 
 
 .s-image {
- z-index: 1;
-height: 12rem;
-margin: 3rem;
-flex-direction: row;
-border-style: solid;
-border-width: .5rem;
-border-color: color(secondary);
-transition: all .3s;
-@include tablet {
-   height: 18rem;
-   border-width: .75rem;
-   margin: 1.5rem;
-     }
-     @include desktop {
-         height: 30rem;
-         border-width: 1rem;
-         margin: 3rem;
-         }
-
-}
-
+   z-index: 1;
+   height: 15rem;
+   margin: .75rem;
+   flex-direction: row;
+   border-style: solid;
+   border-width: .5rem;
+   border-color: color(secondary);
+   transition: all .3s;
+   @include tablet {
+      height: 18rem;
+      border-width: .75rem;
+      margin: 1.5rem;
+        }
+        @include desktop {
+            height: 30rem;
+            border-width: 1rem;
+            margin: 3rem;
+            }
+ }
 
 .s-image:hover {
    @include desktop {
