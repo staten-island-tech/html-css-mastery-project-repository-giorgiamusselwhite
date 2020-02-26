@@ -168,6 +168,7 @@
 @media (min-width: 1100px) {
   .block-2 {
     top: 85rem;
+    /* top: 110rem; */
     height: 90rem;
   }
 }
@@ -319,7 +320,7 @@ position: relative;
 } */
 .block-3 {
   top: 7rem;
-  height: 175rem;
+  height: 190rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -364,7 +365,7 @@ position: relative;
   display: flex;
   width: 100%;
   height: 1rem;
-  top: -80rem;
+  top: -89rem;
   position: relative;
 }
 
@@ -393,7 +394,7 @@ position: relative;
 #sight-title {
   font-family: 'Adamina', serif;
   font-size: 3rem;
-  top: -81rem;
+  top: -90rem;
   position: relative;
   color: #492008;
   text-align: center;
@@ -517,7 +518,7 @@ background-color: rgb(191, 233, 247);
  */
 .s-text {
   color: #b6622a;
-  font-size: 1rem;
+  font-size: 1.5rem;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -530,14 +531,13 @@ background-color: rgb(191, 233, 247);
   text-align: center;
   opacity: 1;
   z-index: 2;
-  margin: -2rem;
+  margin: -1rem;
   font-family: "Kaushan Script";
 }
 
 @media (min-width: 600px) {
   .s-text {
     font-size: 2rem;
-    margin: -2rem;
   }
 }
 
@@ -549,10 +549,9 @@ background-color: rgb(191, 233, 247);
 }
 
 .s-image {
-  overflow: hidden;
   z-index: 1;
   height: 15rem;
-  margin: 0;
+  margin: 2rem;
   opacity: .85;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -567,9 +566,9 @@ background-color: rgb(191, 233, 247);
 
 @media (min-width: 600px) {
   .s-image {
-    height: 18rem;
+    height: 16rem;
     border-width: .75rem;
-    margin: 1.5rem;
+    margin: 2.5rem;
   }
 }
 
@@ -578,6 +577,15 @@ background-color: rgb(191, 233, 247);
     height: 30rem;
     border-width: 1rem;
     margin: 5rem;
+    -webkit-filter: grayscale(0.65);
+            filter: grayscale(0.65);
+  }
+}
+
+@media (min-width: 1100px) {
+  .s-image:hover {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
   }
 }
 
