@@ -1,6 +1,6 @@
 .block-3 {
 
-   top: 2.5rem; 
+   top: 3.5rem; 
     height: 25rem; 
     flex-direction: column;
     display: flex;
@@ -12,7 +12,7 @@ display: flex;
 position: relative;
 
 @include tablet {
-  top: 35rem;
+  top: 40rem;
   height: 45rem;
     }
     @include desktop {

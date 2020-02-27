@@ -1,7 +1,7 @@
 .block-2 {
 
-  top: 7rem; 
-   height: 190rem; 
+  top: 0rem; 
+   height: 30rem; 
    flex-direction: column;
    display: flex;
    justify-content: center;
@@ -12,11 +12,84 @@ display: flex;
 position: relative;
 
 @include tablet {
- top: 45rem;
- height: 90rem;
+ top: 35rem;
+ height: 60rem;
    }
    @include desktop {
        top: 82rem;
        height: 160rem;
          }
 }
+
+
+.flex-parent-2 {  
+  background-color: color(primary);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 50rem;
+}
+
+
+.flex-child-2 {
+margin: 2rem;
+display: flex;
+flex-direction: row;
+align-self: center;
+align-items: center;
+max-height: 80rem;
+background-color: color(secondary);
+}
+
+#header-text {
+color: color(secondary);
+text-align: center;
+}
+
+#paragraph-text {
+color: color(secondary-variant);
+text-align: center;
+font-size: 3rem;
+font-family: 'Lateef', cursive;
+flex-wrap: wrap;
+max-width: 50rem;
+margin: 2rem;
+}
+ 
+#paragraph-text-2 {
+  color: color(secondary-variant);
+  text-align: center;
+  font-size: 4rem;
+  font-family: 'Rye', cursive;
+  flex-wrap: wrap;
+  max-width: 100rem;
+  margin: 2rem;
+  }
+
+.right-box {
+background-color: color(primary-variant);
+display: flex;
+flex-direction: column;
+align-self: center;
+justify-content: space-around;
+width: 100rem;
+height: 45rem;
+}
+
+#images-right {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+background-color: color(secondary);
+width: 90rem;
+height: 20rem;
+padding: 1rem;
+}
+
+
+#photo-sm {
+  max-height: 15rem; 
+  }
+     
