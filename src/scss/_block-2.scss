@@ -40,7 +40,6 @@ text-shadow: white 1.5px 1.5px;
 
 
 .flex-parent-2 {  
-  background-color: color(primary);
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -52,20 +51,19 @@ text-shadow: white 1.5px 1.5px;
 
 
 .flex-child-2 {
-margin: 2rem;
 display: flex;
 flex-direction: row;
 align-self: center;
 justify-content: center;
 align-items: center;
 max-height: 80rem;
-background-color: color(secondary);
+background-color: rgba(73, 32, 8, 0.5);
 @include tablet {
-  margin: 3rem;
+  width: 120rem;
     }
     @include desktop {
-        margin: 4rem;
-        width: 90rem;
+
+        width: 135rem;
           }
 }
 
@@ -76,23 +74,23 @@ text-align: center;
 
 #paragraph-text {
 color: color(secondary-variant);
-text-align: center;
+text-align: left;
 font-size: 3rem;
-font-family: 'Lateef', cursive;
+font-family: 'Oregano', cursive;
+
 flex-wrap: wrap;
-max-width: 50rem;
+width: 50rem;
 margin: 2rem;
+@include tablet {
+  width: 120rem;
+  font-size: 6rem;
+    }
+    @include desktop {
+        width: 135rem;
+        font-size: 3.5rem;
+          }
 }
  
-#paragraph-text-2 {
-  color: color(secondary-variant);
-  text-align: center;
-  font-size: 4rem;
-  font-family: 'Rye', cursive;
-  flex-wrap: wrap;
-  max-width: 100rem;
-  margin: 2rem;
-  }
 
 .left-box {
 background-color: color(primary-variant);
@@ -119,7 +117,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-background-color: color(secondary);
+background-color: rgba(73, 32, 8, 0.5);
 width: 25rem;
 height: 90rem;
 
@@ -128,23 +126,27 @@ height: 90rem;
   height: 110rem;
   }
   @include desktop {
-    width: 25rem;
-height: 40rem;
+    width: 33rem;
+    height: 44rem;
         }
 }
 
 
-#photo-sm {
+#i-photo {
+  border-style: ridge;
+  border-width: .5rem;
+  border-color: white;
   max-height: 15rem; 
   margin: 2rem;
   @include tablet {
-  
-    height: 110rem;
+    max-height: 110rem;
     margin: 1rem;
+    border-width: 1rem;
     }
-    @include desktop {
 
-  height: 110rem;
+    @include desktop {
+  max-height: 18rem;
   margin: 1rem;
+  border-width: .75rem;
           }
   }
