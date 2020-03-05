@@ -37,7 +37,7 @@ text-shadow: white 1.5px 1.5px;
     }
     @include desktop {
         font-size: 8rem;
-        top: -19.5rem;
+        top: -15.5rem;
           }
 }
 
@@ -59,7 +59,7 @@ text-shadow: white 1.5px 1.5px;
       }
       @include desktop {
         flex-direction: row;
-        top: -7rem;
+        top: -4rem;
             }
 }
 
@@ -79,8 +79,8 @@ background-color: rgba(73, 32, 8, 0.25);
   width: 115rem;
     }
     @include desktop {
-      height: 80rem;
-        width: 120rem;
+      height: 73rem;
+        width: 130rem;
         margin: 0 auto;
           }
 }
@@ -105,7 +105,7 @@ margin: 2rem;
     }
     @include desktop {
       color: rgba(226, 208, 198, 0.85);
-        width: 115rem;
+        width: 125rem;
         font-size: 3.5rem;
           }
 }
@@ -113,7 +113,7 @@ margin: 2rem;
 .paragraph-text:hover {
   @include desktop {
     color: white;
-transition: .8s;
+transition: .5s;
       }
 
 }
@@ -128,15 +128,14 @@ justify-content: center;
 background-color: rgba(73, 32, 8, 0.25);
 width: 90%;
 
-
 @include tablet {
   width: 55rem;
   height: 68.8rem;
   flex-direction: column;
   }
   @include desktop {
-    width: 46rem;
-    height: 80rem;
+    width: 44rem;
+    height: 73rem;
     flex-direction: column;
         }
 }
@@ -169,12 +168,14 @@ border-color: white;
   border-width: .5rem;
   border-color: white;
   height: 8.5rem; 
-opacity: .8;
+opacity: .7;
+margin-top: .5rem;
+margin-bottom: .5rem;
 
   @include tablet {
     /* margin-left: 10rem; */
     height: 18rem;
- 
+    border-width: 1rem;
  
     }
 
