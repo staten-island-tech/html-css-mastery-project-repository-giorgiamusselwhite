@@ -1,7 +1,7 @@
 .block-2 {
 
   top: 1rem; 
-   height: 95rem; 
+   height: 92rem; 
    flex-direction: column;
    display: flex;
    justify-content: center;
@@ -13,7 +13,7 @@ position: relative;
 
 @include tablet {
  top: 35rem;
- height: 52.5rem;
+ height: 88rem;
    }
    @include desktop {
        top: 82rem;
@@ -33,10 +33,10 @@ text-shadow: white 1.5px 1.5px;
 
 @include tablet {
   font-size: 5rem;
+  top: -12rem;
     }
     @include desktop {
         font-size: 8rem;
-   
         top: -7rem;
           }
 }
@@ -46,12 +46,16 @@ text-shadow: white 1.5px 1.5px;
 .flex-parent-2 {  
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
   height: 50rem;
   width: 95%;
+  position: relative;
+  top: -2rem;
+
   @include tablet {
     flex-direction: row;
+    top: -3rem;
       }
       @include desktop {
         flex-direction: row;
@@ -71,8 +75,7 @@ width: 90%;
 margin: 1rem;
 background-color: rgba(73, 32, 8, 0.25);
 @include tablet {
-  width: 120rem;
-  margin: 0 auto;
+  width: 115rem;
     }
     @include desktop {
       height: 60rem;
@@ -96,8 +99,8 @@ flex-wrap: wrap;
 width: 90%;
 margin: 2rem;
 @include tablet {
-  width: 75rem;
-  font-size: 2.2rem;
+  width: 53rem;
+  font-size: 2.25rem;
     }
     @include desktop {
       color: rgba(226, 208, 198, 0.85);
@@ -126,8 +129,8 @@ width: 90%;
 
 
 @include tablet {
-  width: 21rem;
-  height: 110rem;
+  width: 55rem;
+  height: 68.8rem;
   flex-direction: column;
   }
   @include desktop {
@@ -137,30 +140,29 @@ width: 90%;
         }
 }
 
-.i-img-box {
+ .i-img-box {
 margin: .75rem;
 justify-content: center;
 align-items: center;
 display: flex;
-height: 11.25rem;
+
 
 @include tablet {
-  overflow: hidden;
-  max-width: 18.9rem;
-  max-height: 12.6rem;
-border-width: 1rem;
-margin: 1rem;
+
+margin: 3.5rem;
   }
 
   @include desktop {
-    overflow: hidden;
-    max-width: 32rem;
-    max-height: 21rem;
-border-width: 1rem;
+  /*   overflow: hidden; */
+    width: 32rem;
+    height: 22rem;
+border-width: 1.25rem;
 margin: 1.5rem;
+border-style: ridge;
+border-color: white;
 }
 }
-
+ 
 #i-photo {
   border-style: ridge;
   border-width: .5rem;
@@ -169,16 +171,20 @@ margin: 1.5rem;
 opacity: .8;
 
   @include tablet {
-    max-height: 12.6rem;
+    /* margin-left: 10rem; */
+    height: 18rem;
  
  
     }
 
     @include desktop {
-  max-height: 24rem;
+ height: 22rem; 
 
     transition: 0.8s;
-          
+      
+    border-style: none;
+    border-width: 0;
+    border-color: none;
   }
 }
 
