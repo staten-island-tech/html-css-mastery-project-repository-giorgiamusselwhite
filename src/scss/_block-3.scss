@@ -1,6 +1,6 @@
 .block-3 {
 
-   top: 3.5rem; 
+   top: 5rem; 
     height: 25rem; 
     flex-direction: column;
     display: flex;
@@ -53,6 +53,7 @@ text-shadow: white 1.5px 1.5px;
 .f-image {
 height: 12rem;
 flex-direction: row;
+opacity: .85;
 border-style: double;
 border-width: .5rem;
 border-color: color(secondary);
