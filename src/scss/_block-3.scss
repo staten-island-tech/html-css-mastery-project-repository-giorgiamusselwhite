@@ -23,31 +23,41 @@ position: relative;
 
 #food-title {
     font-family: 'Adamina', serif;
- 
+    position: relative;
+    top: -.75rem; 
 font-size: 3rem;
 color: color(secondary);
 text-align: center;
 text-shadow: white 1.5px 1.5px;
 @include tablet {
     font-size: 5rem;
+    top: -2.5rem; 
       }
       @include desktop {
           font-size: 8rem;
+          top: -7rem; 
             }
 }
 
 
 
 #foods {
+  position: relative;
+  top: -2rem; 
     display: flex;
     flex-direction: row;
     align-items: center;
     align-content: center;
     justify-content: space-around;
-
     width: 100%;
-
     padding: 1rem;
+
+    @include tablet {
+      top: -4rem; 
+        }
+        @include desktop {
+            top: -5rem; 
+              }
 } 
 
 .f-image {
@@ -76,80 +86,3 @@ transition: all .3s;
  opacity: 1;
 }
 
-/* .food-p {
-  font-family: 'Aclonica', sans-serif;
-  color: white;
-  font-size: 3rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.food-1 {
-display: flex;
-align-content: center;
-justify-content: center;
-position: relative;
-
-} */
-
-
-
-
-/* .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: color(background);
-}
-
-.food1:hover .overlay {
-  opacity: 1;
-}
-
-.food2:hover .overlay {
-  opacity: 1;
-}
-
-.food3:hover .overlay {
-  opacity: 1;
-}
-
-
- */
-
-/* .food2-p {
-  font-family: 'Aclonica', sans-serif;
-  color: white;
-  font-size: 3rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.food3-p {
-  font-family: 'Aclonica', sans-serif;
-  color: white;
-  font-size: 3rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-} */

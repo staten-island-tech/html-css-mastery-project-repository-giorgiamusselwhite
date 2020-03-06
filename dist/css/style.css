@@ -457,6 +457,8 @@ text-align: center;
 
 #food-title {
   font-family: 'Adamina', serif;
+  position: relative;
+  top: -.75rem;
   font-size: 3rem;
   color: #492008;
   text-align: center;
@@ -466,16 +468,20 @@ text-align: center;
 @media (min-width: 600px) {
   #food-title {
     font-size: 5rem;
+    top: -2.5rem;
   }
 }
 
 @media (min-width: 1100px) {
   #food-title {
     font-size: 8rem;
+    top: -7rem;
   }
 }
 
 #foods {
+  position: relative;
+  top: -2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -492,6 +498,18 @@ text-align: center;
       justify-content: space-around;
   width: 100%;
   padding: 1rem;
+}
+
+@media (min-width: 600px) {
+  #foods {
+    top: -4rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  #foods {
+    top: -5rem;
+  }
 }
 
 .f-image {
@@ -529,78 +547,6 @@ text-align: center;
   opacity: 1;
 }
 
-/* .food-p {
-  font-family: 'Aclonica', sans-serif;
-  color: white;
-  font-size: 3rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.food-1 {
-display: flex;
-align-content: center;
-justify-content: center;
-position: relative;
-
-} */
-/* .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: color(background);
-}
-
-.food1:hover .overlay {
-  opacity: 1;
-}
-
-.food2:hover .overlay {
-  opacity: 1;
-}
-
-.food3:hover .overlay {
-  opacity: 1;
-}
-
-
- */
-/* .food2-p {
-  font-family: 'Aclonica', sans-serif;
-  color: white;
-  font-size: 3rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.food3-p {
-  font-family: 'Aclonica', sans-serif;
-  color: white;
-  font-size: 3rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-} */
 .block-4 {
   top: 9rem;
   height: 190rem;
