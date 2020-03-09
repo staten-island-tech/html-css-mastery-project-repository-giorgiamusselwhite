@@ -5,7 +5,7 @@
      flex-direction: column;
      display: flex;
      justify-content: center;
-     background-color: rgba(255, 153, 153, 0.425);
+     background-color: rgba(142, 183, 238, 0.425);
  align-content: center;
  align-items: center;
  display: flex;
@@ -16,26 +16,28 @@
    height: 45rem;
      }
      @include desktop {
-         top: 95rem;
+         top: 125rem;
          height: 90rem;
            }
  }
  
  #booking-title {
-     font-family: 'Adamina', serif;
-     position: relative;
-     top: -.75rem; 
- font-size: 3rem;
- color: color(secondary);
- text-align: center;
- text-shadow: white 1.5px 1.5px;
- @include tablet {
+  font-family: 'Adamina', serif;
+  font-size: 3rem;
+  top: -90rem;
+  position: relative;
+  color: color(secondary);
+  text-align: center;
+  text-shadow: white 1.5px 1.5px;
+  @include tablet {
      font-size: 5rem;
-     top: -2.5rem; 
+     top: -35rem;
+     position: relative;
        }
        @include desktop {
            font-size: 8rem;
-           top: -7rem; 
+           top: -27rem;
+           position: relative;
              }
  }
  
@@ -44,46 +46,63 @@
  #booking-all {
    position: relative;
    top: -2rem; 
+   
+   
+     align-items: center;
+     align-content: center;
+     justify-content: space-around; 
+     width: 100%;
+     padding: 1rem;
      display: flex;
+     flex-direction: column;
+ 
+     @include tablet {
+       top: -4rem; 
+       display: flex;
+       flex-direction: row;
+         }
+         @include desktop {
+             top: -5rem; 
+             display: flex;
+       flex-direction: row;
+               }
+ } 
+ 
+    .b-box {
+   display: flex;
      flex-direction: row;
      align-items: center;
      align-content: center;
      justify-content: space-around;
-     width: 100%;
-     padding: 1rem;
- 
+
      @include tablet {
-       top: -4rem; 
-         }
-         @include desktop {
-             top: -5rem; 
-               }
- } 
- 
- .f-image {
- height: 12rem;
- flex-direction: row;
- opacity: .85;
- border-style: double;
- border-width: .5rem;
- border-color: color(secondary);
- transition: all .3s;
- @include tablet {
-     height: 24rem;
-     border-width: 1rem;
-       }
-       @include desktop {
-         opacity: .7;
-           height: 45rem;
-           border-width: 2rem;
+      
+        }
+        @include desktop {
+         width: 20rem;
           
-           }
- 
- }
- 
- .f-image:hover {
-   transform: scale(1.3);
-  opacity: 1;
- }
- 
- 
+              }
+}
+
+
+
+ .b-text {
+  color: rgb(0, 0, 0);
+  text-align: left;
+  font-size: 1.65rem;
+  font-family: 'Oregano', cursive;
+  text-align: center;
+  
+  @include tablet {
+
+    font-size: 2.25rem;
+      }
+      @include desktop {
+        color: rgba(0, 0, 0, 0.85);
+          font-size: 3.5rem;
+            }
+  }
+
+
+
+
