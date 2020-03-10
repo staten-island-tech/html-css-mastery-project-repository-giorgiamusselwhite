@@ -45,7 +45,7 @@
  
  #booking-all {
    position: relative;
-   top: -2rem; 
+   top: -6rem; 
    
    
      align-items: center;
@@ -57,7 +57,7 @@
      flex-direction: column;
  
      @include tablet {
-       top: -4rem; 
+       top: -2rem; 
        display: flex;
        flex-direction: row;
          }
@@ -74,17 +74,28 @@
      align-items: center;
      align-content: center;
      justify-content: space-around;
+     clip-path: polygon(20% 15%, 80% 15%, 100% 35%, 100% 65%, 80% 85%, 20% 85%, 0 65%, 0 35%);
+      background-color: rgb(240, 195, 152);
 
      @include tablet {
       
         }
         @include desktop {
-         width: 20rem;
-          
+         width: 55rem;
+          height: 23rem;  
               }
 }
 
+.b-text-box {
+ width: 40rem;
 
+  @include tablet {
+    width: 40rem;
+     }
+     @include desktop {
+      width: 40rem;
+           }
+}
 
  .b-text {
   color: rgb(0, 0, 0);
@@ -92,7 +103,9 @@
   font-size: 1.65rem;
   font-family: 'Oregano', cursive;
   text-align: center;
-  
+  position: relative;
+  text-transform: uppercase;
+
   @include tablet {
 
     font-size: 2.25rem;
@@ -100,9 +113,24 @@
       @include desktop {
         color: rgba(0, 0, 0, 0.85);
           font-size: 3.5rem;
+       
             }
   }
 
+  .b-icon {
+   position: relative;
+   left: -2rem;
+  
+    @include tablet {
+      left: -2rem;
+        }
 
+        @include desktop {
+           left: -4.5rem;
+           height: 7.75rem;
+              }
+
+
+  }
 
 
