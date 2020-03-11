@@ -941,7 +941,7 @@ background-color: whitesmoke;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: rgba(142, 183, 238, 0.425);
+  background-color: rgba(255, 255, 255, 0.425);
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-align: center;
@@ -960,8 +960,8 @@ background-color: whitesmoke;
 
 @media (min-width: 1100px) {
   .block-5 {
-    top: 125rem;
-    height: 90rem;
+    top: 124rem;
+    height: 55rem;
   }
 }
 
@@ -986,7 +986,7 @@ background-color: whitesmoke;
 @media (min-width: 1100px) {
   #booking-title {
     font-size: 8rem;
-    top: -27rem;
+    top: -3rem;
     position: relative;
   }
 }
@@ -1055,7 +1055,7 @@ background-color: whitesmoke;
       justify-content: space-around;
   -webkit-clip-path: polygon(20% 15%, 80% 15%, 100% 35%, 100% 65%, 80% 85%, 20% 85%, 0 65%, 0 35%);
           clip-path: polygon(20% 15%, 80% 15%, 100% 35%, 100% 65%, 80% 85%, 20% 85%, 0 65%, 0 35%);
-  background-color: #f0c398;
+  background-color: rgba(247, 206, 140, 0.507);
 }
 
 @media (min-width: 1100px) {
@@ -1101,6 +1101,9 @@ background-color: whitesmoke;
   .b-text {
     color: rgba(0, 0, 0, 0.85);
     font-size: 3.5rem;
+    left: 5.5rem;
+    -webkit-transition: all .3s;
+    transition: all .3s;
   }
 }
 
@@ -1119,7 +1122,23 @@ background-color: whitesmoke;
   .b-icon {
     left: -4.5rem;
     height: 7.75rem;
+    opacity: 0;
+    -webkit-transition: all .3s;
+    transition: all .3s;
   }
+}
+
+@media (min-width: 1100px) {
+  .b-box:hover .b-text {
+    left: 0rem;
+  }
+  .b-box:hover .b-icon {
+    opacity: 1;
+  }
+}
+
+a:link {
+  text-decoration: none;
 }
 
 html {

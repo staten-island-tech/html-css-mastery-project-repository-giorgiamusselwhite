@@ -5,7 +5,7 @@
      flex-direction: column;
      display: flex;
      justify-content: center;
-     background-color: rgba(142, 183, 238, 0.425);
+     background-color: rgba(255, 255, 255, 0.425);
  align-content: center;
  align-items: center;
  display: flex;
@@ -16,8 +16,8 @@
    height: 45rem;
      }
      @include desktop {
-         top: 125rem;
-         height: 90rem;
+         top: 124rem;
+         height: 55rem;
            }
  }
  
@@ -36,7 +36,7 @@
        }
        @include desktop {
            font-size: 8rem;
-           top: -27rem;
+           top: -3rem;
            position: relative;
              }
  }
@@ -75,7 +75,7 @@
      align-content: center;
      justify-content: space-around;
      clip-path: polygon(20% 15%, 80% 15%, 100% 35%, 100% 65%, 80% 85%, 20% 85%, 0 65%, 0 35%);
-      background-color: rgb(240, 195, 152);
+     background-color: rgba(247, 206, 140, 0.507);
 
      @include tablet {
       
@@ -113,7 +113,8 @@
       @include desktop {
         color: rgba(0, 0, 0, 0.85);
           font-size: 3.5rem;
-       
+         left: 5.5rem;
+         transition: all .3s;
             }
   }
 
@@ -128,9 +129,26 @@
         @include desktop {
            left: -4.5rem;
            height: 7.75rem;
+           opacity: 0;
+           transition: all .3s;
               }
 
 
   }
 
 
+  .b-box:hover {
+   
+    @include desktop {
+      .b-text {
+       left: 0rem; 
+      }
+      .b-icon {
+        opacity: 1;
+       }
+      }
+    }
+
+    a:link {
+      text-decoration: none;
+    }
