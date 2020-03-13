@@ -572,7 +572,7 @@ text-align: center;
 
 @media (min-width: 600px) {
   .block-4 {
-    top: 45rem;
+    top: 46.5rem;
     height: 90rem;
   }
 }
@@ -929,8 +929,8 @@ background-color: whitesmoke;
 }
 
 .block-5 {
-  top: 5rem;
-  height: 25rem;
+  top: 13rem;
+  height: 53rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -953,8 +953,8 @@ background-color: whitesmoke;
 
 @media (min-width: 600px) {
   .block-5 {
-    top: 40rem;
-    height: 45rem;
+    top: 52rem;
+    height: 35rem;
   }
 }
 
@@ -968,7 +968,7 @@ background-color: whitesmoke;
 #booking-title {
   font-family: 'Adamina', serif;
   font-size: 3rem;
-  top: -90rem;
+  top: .5rem;
   position: relative;
   color: #492008;
   text-align: center;
@@ -977,8 +977,8 @@ background-color: whitesmoke;
 
 @media (min-width: 600px) {
   #booking-title {
-    font-size: 5rem;
-    top: -35rem;
+    font-size: 4.5rem;
+    top: 0rem;
     position: relative;
   }
 }
@@ -993,7 +993,7 @@ background-color: whitesmoke;
 
 #booking-all {
   position: relative;
-  top: -6rem;
+  top: -2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1042,6 +1042,8 @@ background-color: whitesmoke;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 33rem;
+  height: 14rem;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -1058,6 +1060,13 @@ background-color: whitesmoke;
   background-color: rgba(247, 206, 140, 0.507);
 }
 
+@media (min-width: 600px) {
+  .b-box {
+    width: 32rem;
+    height: 15rem;
+  }
+}
+
 @media (min-width: 1100px) {
   .b-box {
     width: 55rem;
@@ -1066,12 +1075,12 @@ background-color: whitesmoke;
 }
 
 .b-text-box {
-  width: 40rem;
+  width: 20rem;
 }
 
 @media (min-width: 600px) {
   .b-text-box {
-    width: 40rem;
+    width: 25rem;
   }
 }
 
@@ -1084,7 +1093,7 @@ background-color: whitesmoke;
 .b-text {
   color: black;
   text-align: left;
-  font-size: 1.65rem;
+  font-size: 1.85rem;
   font-family: 'Oregano', cursive;
   text-align: center;
   position: relative;
@@ -1093,7 +1102,7 @@ background-color: whitesmoke;
 
 @media (min-width: 600px) {
   .b-text {
-    font-size: 2.25rem;
+    font-size: 2.15rem;
   }
 }
 
@@ -1110,11 +1119,13 @@ background-color: whitesmoke;
 .b-icon {
   position: relative;
   left: -2rem;
+  height: 5.25rem;
 }
 
 @media (min-width: 600px) {
   .b-icon {
     left: -2rem;
+    height: 5.75rem;
   }
 }
 
