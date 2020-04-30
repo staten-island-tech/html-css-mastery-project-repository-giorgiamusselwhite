@@ -6,8 +6,8 @@ $colors: (
   background: #a5a5a5,
 );
 
-
-$tablet: 600px;
+$tablet-portrait: 600px;
+$tablet-landscape: 600px;
 $laptop: 1100px;
 $desktop: 1100px;
 
@@ -16,8 +16,16 @@ $desktop: 1100px;
   @return map-get($colors, $color-name);
 } 
 
-@mixin tablet {
-  @media (min-width: #{$tablet}) {
+
+@mixin tablet-portrait {
+  @media (min-width: #{$tablet-portrait}) 
+  and (orientation : portrait){
+    @content;
+  }
+}
+@mixin tablet-landscape {
+  @media (min-width: #{$tablet-landscape}) 
+  and (orientation : landscape){
     @content;
   }
 }
@@ -41,14 +49,20 @@ $desktop: 1100px;
   border-width: .5rem;
   border-color: color(secondary);
   transition: all .3s;
-  @include tablet {
+  @include tablet-landscape {
      height: 18rem;
      border-width: .75rem;
      margin: 1.5rem;
        }
+       @include tablet-portrait {
+        height: 18rem;
+        border-width: .75rem;
+        margin: 1.5rem;
+          }
        @include desktop {
            height: 30rem;
            border-width: 1rem;
            margin: 3rem;
            }
-}
+          }
+        

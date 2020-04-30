@@ -11,10 +11,17 @@
  display: flex;
  position: relative;
  
- @include tablet {
+ @include tablet-landscape {
    top: 52rem;
    height: 35rem;
      }
+
+     @include tablet-portrait {
+      top: 39rem;
+      height: 27rem;
+        }
+
+
      @include desktop {
          top: 124rem;
          height: 55rem;
@@ -29,11 +36,16 @@
   color: color(secondary);
   text-align: center;
   text-shadow: white 1.5px 1.5px;
-  @include tablet {
+  @include tablet-landscape {
      font-size: 4.5rem;
      top: 0rem;
      position: relative;
        }
+       @include tablet-portrait {
+        font-size: 4.5rem;
+        top: 1rem;
+        position: relative;
+          }
        @include desktop {
            font-size: 8rem;
            top: -3rem;
@@ -56,11 +68,16 @@
      display: flex;
      flex-direction: column;
  
-     @include tablet {
+     @include tablet-landscape {
        top: -2rem; 
        display: flex;
        flex-direction: row;
          }
+         @include tablet-portrait {
+          top: -2rem; 
+          display: flex;
+          flex-direction: row;
+            }
          @include desktop {
              top: -5rem; 
              display: flex;
@@ -79,10 +96,14 @@
      clip-path: polygon(20% 15%, 80% 15%, 100% 35%, 100% 65%, 80% 85%, 20% 85%, 0 65%, 0 35%);
      background-color: rgba(247, 206, 140, 0.507);
 
-     @include tablet {
+     @include tablet-landscape {
       width: 32rem;
       height: 15rem;  
         }
+        @include tablet-portrait {
+          width: 23rem;
+          height: 12rem;  
+            }
         @include desktop {
          width: 55rem;
           height: 23rem;  
@@ -92,9 +113,14 @@
 .b-text-box {
  width: 20rem;
 
-  @include tablet {
+  @include tablet-landscape {
     width: 25rem;
      }
+
+     @include tablet-portrait {
+      width: 12rem;
+       }
+
      @include desktop {
       width: 40rem;
            }
@@ -109,10 +135,14 @@
   position: relative;
   text-transform: uppercase;
 
-  @include tablet {
-
+  @include tablet-landscape {
     font-size: 2.15rem;
       }
+          @include tablet-portrait {
+            font-size: 1.65rem;
+            left: 0.75rem;
+             }
+
       @include desktop {
         color: rgba(0, 0, 0, 0.85);
           font-size: 3.5rem;
@@ -126,10 +156,16 @@
    left: -2rem;
    height: 5.25rem;
   
-    @include tablet {
+    @include tablet-landscape {
       left: -2rem;
       height: 5.75rem;
         }
+
+        @include tablet-portrait {
+          left: -1.5rem;
+          height: 5.5rem;
+            }
+    
 
         @include desktop {
            left: -4.5rem;

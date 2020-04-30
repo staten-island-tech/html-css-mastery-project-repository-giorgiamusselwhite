@@ -24,7 +24,15 @@
   text-shadow: white 2px 2px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: landscape) {
+  #title-h1 {
+    font-size: 8rem;
+    margin-top: 6.5%;
+    margin-left: 13.25%;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
   #title-h1 {
     font-size: 8rem;
     margin-top: 6.5%;
@@ -77,7 +85,15 @@
           transform: rotate(180deg);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: landscape) {
+  #title-h2 {
+    font-size: 3rem;
+    margin-top: 4%;
+    margin-left: 8.5%;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
   #title-h2 {
     font-size: 3rem;
     margin-top: 4%;
@@ -158,10 +174,17 @@
   position: relative;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: landscape) {
   .block-2 {
     top: 35rem;
     height: 88rem;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+  .block-2 {
+    top: 22rem;
+    height: 105rem;
   }
 }
 
@@ -182,10 +205,17 @@
   text-shadow: white 1.5px 1.5px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: landscape) {
   #i-title {
     font-size: 5rem;
     top: -12rem;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+  #i-title {
+    font-size: 5rem;
+    top: -20.5rem;
   }
 }
 
@@ -216,7 +246,7 @@
   top: -2rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: landscape) {
   .flex-parent-2 {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -258,7 +288,7 @@
   background-color: rgba(73, 32, 8, 0.25);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: landscape) {
   .flex-child-2 {
     width: 115rem;
   }
@@ -288,9 +318,15 @@ text-align: center;
   margin: 2rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: landscape) {
   .paragraph-text {
     width: 53rem;
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+  .paragraph-text {
     font-size: 2.25rem;
   }
 }
@@ -327,9 +363,14 @@ text-align: center;
           justify-content: center;
   background-color: rgba(73, 32, 8, 0.25);
   width: 90%;
+  /* 
+  @include tablet-portrait {
+    width: 55rem;
+    height: 68.8rem;
+    } */
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: landscape) {
   #i-images-all {
     width: 55rem;
     height: 68.8rem;
@@ -364,9 +405,15 @@ text-align: center;
   display: flex;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: landscape) {
   .i-img-box {
     margin: 3.5rem;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+  .i-img-box {
+    margin: 1rem;
   }
 }
 
@@ -392,7 +439,15 @@ text-align: center;
   margin-bottom: .5rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: landscape) {
+  #i-photo {
+    /* margin-left: 10rem; */
+    height: 18rem;
+    border-width: 1rem;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
   #i-photo {
     /* margin-left: 10rem; */
     height: 18rem;
@@ -441,10 +496,17 @@ text-align: center;
   position: relative;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: landscape) {
   .block-3 {
-    top: 40rem;
+    top: 41rem;
     height: 45rem;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+  .block-3 {
+    top: 28rem;
+    height: 42rem;
   }
 }
 
@@ -465,10 +527,16 @@ text-align: center;
   text-shadow: white 1.5px 1.5px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: landscape) {
   #food-title {
     font-size: 5rem;
     top: -2.5rem;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+  #food-title {
+    font-size: 5rem;
   }
 }
 
@@ -500,9 +568,15 @@ text-align: center;
   padding: 1rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: landscape) {
   #foods {
     top: -4rem;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+  #foods {
+    top: -3rem;
   }
 }
 
@@ -526,7 +600,14 @@ text-align: center;
   transition: all .3s;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: landscape) {
+  .f-image {
+    height: 24rem;
+    border-width: 1rem;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
   .f-image {
     height: 24rem;
     border-width: 1rem;
@@ -570,10 +651,17 @@ text-align: center;
   position: relative;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: landscape) {
   .block-4 {
     top: 46.5rem;
     height: 90rem;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+  .block-4 {
+    top: 33.5rem;
+    height: 71rem;
   }
 }
 
@@ -598,9 +686,20 @@ text-align: center;
   position: relative;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: landscape) {
   .sights-all {
     top: -35rem;
+    position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+  .sights-all {
+    top: -29.5rem;
     position: relative;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -630,10 +729,18 @@ text-align: center;
   text-shadow: white 1.5px 1.5px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: landscape) {
   #sight-title {
     font-size: 5rem;
     top: -35rem;
+    position: relative;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+  #sight-title {
+    font-size: 5rem;
+    top: -28.5rem;
     position: relative;
   }
 }
@@ -658,9 +765,15 @@ text-align: center;
   position: relative;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: landscape) {
   #s-column1 {
     padding: 1rem;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+  #s-column1 {
+    padding: .3rem;
   }
 }
 
@@ -682,9 +795,15 @@ text-align: center;
   position: relative;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: landscape) {
   #s-column2 {
     padding: 1rem;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+  #s-column2 {
+    padding: .3rem;
   }
 }
 
@@ -706,9 +825,15 @@ text-align: center;
   position: relative;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: landscape) {
   #s-column3 {
     padding: 1rem;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+  #s-column3 {
+    padding: .3rem;
   }
 }
 
@@ -747,7 +872,7 @@ background-color: rgb(191, 233, 247);
  */
 .s-text {
   color: #b6622a;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -764,7 +889,13 @@ background-color: rgb(191, 233, 247);
   font-family: 'Oregano', cursive;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: landscape) {
+  .s-text {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
   .s-text {
     font-size: 2rem;
   }
@@ -793,11 +924,19 @@ background-color: rgb(191, 233, 247);
   transition: all .3s;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: landscape) {
   .s-image {
     height: 16rem;
     border-width: .75rem;
     margin: 2.5rem;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+  .s-image {
+    height: 13.5rem;
+    border-width: .4rem;
+    margin: 2rem;
   }
 }
 
@@ -951,10 +1090,17 @@ background-color: whitesmoke;
   position: relative;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: landscape) {
   .block-5 {
     top: 52rem;
     height: 35rem;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+  .block-5 {
+    top: 39rem;
+    height: 27rem;
   }
 }
 
@@ -975,10 +1121,18 @@ background-color: whitesmoke;
   text-shadow: white 1.5px 1.5px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: landscape) {
   #booking-title {
     font-size: 4.5rem;
     top: 0rem;
+    position: relative;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+  #booking-title {
+    font-size: 4.5rem;
+    top: 1rem;
     position: relative;
   }
 }
@@ -1012,7 +1166,20 @@ background-color: whitesmoke;
           flex-direction: column;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: landscape) {
+  #booking-all {
+    top: -2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
   #booking-all {
     top: -2rem;
     display: -webkit-box;
@@ -1060,10 +1227,17 @@ background-color: whitesmoke;
   background-color: rgba(247, 206, 140, 0.507);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: landscape) {
   .b-box {
     width: 32rem;
     height: 15rem;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+  .b-box {
+    width: 23rem;
+    height: 12rem;
   }
 }
 
@@ -1078,9 +1252,15 @@ background-color: whitesmoke;
   width: 20rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: landscape) {
   .b-text-box {
     width: 25rem;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+  .b-text-box {
+    width: 12rem;
   }
 }
 
@@ -1100,9 +1280,16 @@ background-color: whitesmoke;
   text-transform: uppercase;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: landscape) {
   .b-text {
     font-size: 2.15rem;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+  .b-text {
+    font-size: 1.65rem;
+    left: 0.75rem;
   }
 }
 
@@ -1122,10 +1309,17 @@ background-color: whitesmoke;
   height: 5.25rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (orientation: landscape) {
   .b-icon {
     left: -2rem;
     height: 5.75rem;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+  .b-icon {
+    left: -1.5rem;
+    height: 5.5rem;
   }
 }
 

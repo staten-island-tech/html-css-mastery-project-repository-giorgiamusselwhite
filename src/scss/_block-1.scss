@@ -23,11 +23,16 @@
     margin-left: 5.5rem;
     margin-top: 1.7rem;
     text-shadow: white 2px 2px;
-    @include tablet {
+    @include tablet-landscape {
         font-size: 8rem;
         margin-top: 6.5%;
         margin-left: 13.25%;
          }
+         @include tablet-portrait {
+            font-size: 8rem;
+            margin-top: 6.5%;
+            margin-left: 13.25%;
+             }
     @include desktop {
         font-size: 16rem;
          margin-top: 7%;
@@ -56,12 +61,16 @@
         margin-top: 1rem;
         writing-mode: vertical-rl;
         transform: rotate(180deg);
-        @include tablet {
+        @include tablet-landscape {
             font-size: 3rem;
             margin-top: 4%;
             margin-left: 8.5%;
           }
-        
+          @include tablet-portrait {
+            font-size: 3rem;
+            margin-top: 4%;
+            margin-left: 8.5%;
+          }
         @include desktop {
             font-size: 6rem;
             margin-top: 5%;

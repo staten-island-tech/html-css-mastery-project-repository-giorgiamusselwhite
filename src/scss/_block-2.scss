@@ -11,10 +11,15 @@ align-items: center;
 display: flex;
 position: relative;
 
-@include tablet {
+@include tablet-landscape {
  top: 35rem;
  height: 88rem;
    }
+   @include tablet-portrait {
+    top: 22rem;
+    height: 105rem;
+      }
+
    @include desktop {
        top: 82rem;
        height: 105rem;
@@ -31,10 +36,16 @@ color: color(secondary);
 text-align: center;
 text-shadow: white 1.5px 1.5px;
 
-@include tablet {
+@include tablet-landscape {
   font-size: 5rem;
   top: -12rem;
     }
+
+    @include tablet-portrait {
+      font-size: 5rem;
+      top: -20.5rem;
+        }
+
     @include desktop {
         font-size: 8rem;
         top: -15.5rem;
@@ -53,7 +64,7 @@ text-shadow: white 1.5px 1.5px;
   position: relative;
   top: -2rem;
 
-  @include tablet {
+  @include tablet-landscape {
     flex-direction: row;
     top: -3rem;
       }
@@ -75,7 +86,7 @@ max-height:100rem;
 width: 90%;
 margin: 1rem;
 background-color: rgba(73, 32, 8, 0.25);
-@include tablet {
+@include tablet-landscape {
   width: 115rem;
     }
     @include desktop {
@@ -95,14 +106,18 @@ color: white;
 text-align: left;
 font-size: 1.65rem;
 font-family: 'Oregano', cursive;
-
 flex-wrap: wrap;
 width: 90%;
 margin: 2rem;
-@include tablet {
+@include tablet-landscape {
   width: 53rem;
   font-size: 2.25rem;
     }
+
+    @include tablet-portrait {
+      font-size: 2.25rem;
+        }
+
     @include desktop {
       color: rgba(226, 208, 198, 0.85);
         width: 125rem;
@@ -128,11 +143,17 @@ justify-content: center;
 background-color: rgba(73, 32, 8, 0.25);
 width: 90%;
 
-@include tablet {
+@include tablet-landscape {
   width: 55rem;
   height: 68.8rem;
   flex-direction: column;
   }
+/* 
+  @include tablet-portrait {
+    width: 55rem;
+    height: 68.8rem;
+    } */
+
   @include desktop {
     width: 44rem;
     height: 73rem;
@@ -147,10 +168,13 @@ align-items: center;
 display: flex;
 
 
-@include tablet {
-
+@include tablet-landscape {
 margin: 3.5rem;
   }
+
+  @include tablet-portrait {
+    margin: 1rem;
+      }
 
   @include desktop {
      overflow: hidden; 
@@ -172,12 +196,19 @@ opacity: .7;
 margin-top: .5rem;
 margin-bottom: .5rem;
 
-  @include tablet {
+  @include tablet-landscape {
     /* margin-left: 10rem; */
     height: 18rem;
     border-width: 1rem;
  
     }
+
+    @include tablet-portrait {
+      /* margin-left: 10rem; */
+      height: 18rem;
+      border-width: 1rem;
+   
+      }
 
     @include desktop {
  height: 22rem; 

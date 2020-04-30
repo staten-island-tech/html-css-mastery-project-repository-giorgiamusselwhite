@@ -11,10 +11,16 @@ align-items: center;
 display: flex;
 position: relative;
 
-@include tablet {
-  top: 40rem;
+@include tablet-landscape {
+  top: 41rem;
   height: 45rem;
     }
+
+    @include tablet-portrait {
+      top: 28rem;
+      height: 42rem;
+        }
+
     @include desktop {
         top: 95rem;
         height: 90rem;
@@ -29,10 +35,13 @@ font-size: 3rem;
 color: color(secondary);
 text-align: center;
 text-shadow: white 1.5px 1.5px;
-@include tablet {
+@include tablet-landscape {
     font-size: 5rem;
     top: -2.5rem; 
       }
+      @include tablet-portrait {
+        font-size: 5rem;
+          }
       @include desktop {
           font-size: 8rem;
           top: -7rem; 
@@ -52,9 +61,15 @@ text-shadow: white 1.5px 1.5px;
     width: 100%;
     padding: 1rem;
 
-    @include tablet {
+    @include tablet-landscape {
       top: -4rem; 
         }
+
+        
+    @include tablet-portrait {
+      top: -3rem; 
+        }
+
         @include desktop {
             top: -5rem; 
               }
@@ -68,10 +83,14 @@ border-style: double;
 border-width: .5rem;
 border-color: color(secondary);
 transition: all .3s;
-@include tablet {
+@include tablet-landscape {
     height: 24rem;
     border-width: 1rem;
       }
+      @include tablet-portrait {
+        height: 24rem;
+        border-width: 1rem;
+          }
       @include desktop {
         opacity: .7;
           height: 45rem;
